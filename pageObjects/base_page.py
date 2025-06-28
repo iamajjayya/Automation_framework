@@ -12,7 +12,7 @@ class BasePage:
         self.driver = driver
         self.timeout = timeout
         self.logger = logging.getLogger(__name__)
-        if not os.path.exists("Screenshots"):
+        if not os.path.exists("\Screenshots"):
             os.mkdir("Screenshots")
 
 
@@ -66,14 +66,13 @@ class BasePage:
         filename = f"Screenshots/{name}_{timestamp}.png"
 
         try:
-            self.driver.save_screenshots(filename)
+            self.driver.save_screenshot(filename)
             self.logger.info(f"Screenshot saved : {filename}")
         except Exception as e:
             self.logger.error(f"Failed to save screenshots : {e}")
 
-
     def highlight_element(self, element):
         try:
-            self.driver.execute_script("aruguments[0].style.border='3px solid red ")
+            self.driver.execute_script("arguments[0].style.border='3px solid red'", element)
         except Exception as e:
-            self.logger.error(f"Failed to highlight element : {e}")
+            self.logger.error(f"Failed to highlight element: {e}")
