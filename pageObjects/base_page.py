@@ -12,7 +12,7 @@ class BasePage:
         self.driver = driver
         self.timeout = timeout
         self.logger = logging.getLogger(__name__)
-        if not os.path.exists("\Screenshots"):
+        if not os.path.exists("Screenshots"):
             os.mkdir("Screenshots")
 
 
