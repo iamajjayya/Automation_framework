@@ -1,0 +1,370 @@
+2025-07-05 19:30:10,941 - customLogger - INFO - Manual test: logger should work.
+2025-07-05 19:30:28,946 - customLogger - INFO - **** Test Case: test_login_title ****
+2025-07-05 19:30:28,946 - customLogger - INFO - **** Verifying Home Page Title ****
+2025-07-05 19:30:30,697 - customLogger - INFO - **** Home Page Title Test Passed ****
+2025-07-05 19:30:32,263 - customLogger - INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 19:30:32,263 - customLogger - INFO - **** Logging in with Valid Credentials ****
+2025-07-05 19:30:34,895 - customLogger - INFO - **** Login attempt completed ****
+2025-07-05 19:31:13,763 - utilities.customLogger - INFO - **** Test Case: test_login_title ****
+2025-07-05 19:31:13,763 - utilities.customLogger - INFO - **** Verifying Home Page Title ****
+2025-07-05 19:31:15,678 - utilities.customLogger - INFO - **** Home Page Title Test Passed ****
+2025-07-05 19:31:17,293 - utilities.customLogger - INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 19:31:17,294 - utilities.customLogger - INFO - **** Logging in with Valid Credentials ****
+2025-07-05 19:31:20,795 - utilities.customLogger - INFO - **** Login attempt completed ****
+2025-07-05 19:32:40,755 - test_login.py - INFO - **** Test Case: test_login_title ****
+2025-07-05 19:32:40,755 - test_login.py - INFO - **** Verifying Home Page Title ****
+2025-07-05 19:32:42,279 - test_login.py - INFO - **** Home Page Title Test Passed ****
+2025-07-05 19:32:43,731 - test_login.py - INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 19:32:43,732 - test_login.py - INFO - **** Logging in with Valid Credentials ****
+2025-07-05 19:32:46,169 - test_login.py - INFO - **** Login attempt completed ****
+2025-07-05 20:34:39,575 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:34:39,576 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:34:40,987 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 20:34:42,414 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:34:42,415 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:34:45,366 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:35:56,287 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:35:56,287 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:35:59,528 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 20:36:00,982 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:36:00,983 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:36:03,229 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:41:57,046 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:41:57,046 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:41:58,899 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 20:42:00,341 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:42:00,341 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:42:05,198 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:42:25,657 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:42:25,657 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:42:27,163 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 20:42:28,677 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:42:28,677 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:42:29,847 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:47:01,451 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:47:01,451 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:47:02,892 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 20:47:04,294 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:47:04,294 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:47:16,317 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:49:52,499 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:49:52,500 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:49:55,051 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 20:49:56,557 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:49:56,558 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:49:58,202 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:52:14,722 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:52:14,722 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:52:16,287 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 20:52:17,746 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:52:17,746 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:52:19,449 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:54:17,775 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:54:17,776 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:54:19,335 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 20:54:20,843 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:54:20,843 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:54:22,807 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 20:54:48,227 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 20:54:48,227 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 20:54:49,739 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 20:54:51,163 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 20:54:51,163 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 20:54:53,795 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 21:04:05,609 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 21:04:05,609 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 21:04:09,046 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 21:04:09,046 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 21:04:11,439 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 21:05:40,165 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 21:05:40,165 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 21:05:41,796 -test_login.py -ERROR - **** Home Page Title Test Failed: Found 'nopCommerce demo store. Login' ****
+2025-07-05 21:05:43,294 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 21:05:43,294 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 21:05:45,248 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 21:57:12,438 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 21:57:12,439 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 21:57:14,295 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 21:57:16,691 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 21:57:16,692 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 21:57:19,061 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 22:46:31,013 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 22:46:31,013 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 22:46:33,542 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 22:46:35,172 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 22:46:35,173 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 22:46:37,573 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 22:47:40,838 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 22:47:40,839 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 22:47:42,285 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 22:47:43,988 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 22:47:43,989 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 22:47:46,849 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 23:04:11,295 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 23:04:11,295 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 23:04:11,604 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 23:04:11,604 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 23:04:13,321 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 23:04:15,385 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 23:18:42,056 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 23:18:42,056 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 23:18:43,663 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 23:18:45,742 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 23:18:45,742 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 23:18:49,072 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 23:22:11,370 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 23:22:11,370 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 23:22:13,044 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 23:22:14,819 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 23:22:14,819 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 23:22:17,589 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 23:26:28,918 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 23:26:28,918 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 23:26:31,238 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 23:26:32,997 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 23:26:32,998 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 23:26:36,511 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-05 23:28:18,041 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-05 23:28:18,041 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-05 23:28:19,527 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-05 23:28:21,218 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-05 23:28:21,219 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-05 23:28:23,972 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-06 00:44:53,680 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login  ****
+2025-07-06 00:44:53,681 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 00:44:55,325 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 00:44:55,325 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 00:45:23,443 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login  ****
+2025-07-06 00:45:23,443 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 00:45:25,042 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 00:45:25,042 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 00:48:07,340 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login ****
+2025-07-06 00:48:07,341 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 00:48:09,076 -test_login_ddt.py -INFO - **** Home Page Title Test Passed ****
+2025-07-06 00:48:11,056 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 00:48:11,057 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 00:50:11,721 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login ****
+2025-07-06 00:50:11,721 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 00:50:12,479 -test_login_ddt.py -INFO - **** Home Page Title Test Passed ****
+2025-07-06 00:50:14,509 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 00:50:14,509 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 00:51:25,689 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login ****
+2025-07-06 00:51:25,689 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 00:51:27,346 -test_login_ddt.py -INFO - **** Home Page Title Test Passed ****
+2025-07-06 00:51:28,989 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 00:51:28,990 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 00:55:28,845 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login ****
+2025-07-06 00:55:28,846 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 00:55:30,447 -test_login_ddt.py -INFO - **** Home Page Title Test Passed ****
+2025-07-06 00:55:32,758 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 00:55:32,758 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:01:22,434 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login ****
+2025-07-06 01:01:22,434 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 01:01:24,429 -test_login_ddt.py -INFO - **** Home Page Title Test Passed ****
+2025-07-06 01:01:26,261 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:01:26,262 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:02:45,717 -test_login_ddt.py -INFO - **** Test Case: Test_002_DDT_Login ****
+2025-07-06 01:02:45,717 -test_login_ddt.py -INFO - **** Verifying Home Page Title ****
+2025-07-06 01:02:47,301 -test_login_ddt.py -INFO - **** Home Page Title Test Passed ****
+2025-07-06 01:02:48,896 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:02:48,896 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:03:28,653 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:03:28,653 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:06:36,132 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:06:36,132 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:13:05,910 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data (DDT) ****
+2025-07-06 01:13:07,698 -test_login_ddt.py -INFO - Total rows in Excel: 4
+2025-07-06 01:13:49,894 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:13:49,894 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:14:57,406 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:14:57,407 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:15:56,440 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:15:56,441 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 01:16:23,868 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 01:16:23,869 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 11:42:10,312 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 11:42:10,313 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 11:45:15,327 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 11:45:15,327 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 11:53:03,744 -test_login_ddt.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-06 11:53:03,744 -test_login_ddt.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-06 11:57:55,028 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 11:57:57,175 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 11:57:57,189 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 11:57:57,190 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Pass
+2025-07-06 11:58:02,064 -test_login_ddt.py -WARNING - Row 2: Unexpected login failure
+2025-07-06 11:58:02,232 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 11:58:02,233 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 11:58:07,002 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 11:58:07,030 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 11:58:07,031 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 11:58:11,386 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 11:58:11,386 -test_login_ddt.py -ERROR - Some DDT login tests failed.
+2025-07-06 12:01:32,761 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:01:33,649 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:01:33,665 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:01:33,665 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Pass
+2025-07-06 12:01:38,527 -test_login_ddt.py -WARNING - Row 2: Unexpected login failure
+2025-07-06 12:01:38,705 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 12:01:38,705 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 12:01:42,750 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 12:01:42,776 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 12:01:42,777 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 12:01:46,664 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 12:01:46,664 -test_login_ddt.py -ERROR - Some DDT login tests failed.
+2025-07-06 12:02:29,025 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:02:31,745 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:02:31,759 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:02:31,759 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Pass
+2025-07-06 12:02:35,806 -test_login_ddt.py -WARNING - Row 2: Unexpected login failure
+2025-07-06 12:02:36,006 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 12:02:36,007 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 12:02:39,840 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 12:02:39,866 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 12:02:39,866 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 12:02:44,680 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 12:02:44,681 -test_login_ddt.py -ERROR - Some DDT login tests failed.
+2025-07-06 12:03:22,164 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:03:24,105 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:03:24,128 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:03:24,128 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Pass
+2025-07-06 12:03:29,062 -test_login_ddt.py -WARNING - Row 2: Unexpected login failure
+2025-07-06 12:03:29,226 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 12:03:29,227 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 12:03:34,179 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 12:03:34,207 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 12:03:34,207 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Expected Result: Fail
+2025-07-06 12:03:38,098 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 12:03:38,098 -test_login_ddt.py -ERROR - Some DDT login tests failed.
+2025-07-06 12:06:38,031 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:06:41,183 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:06:41,206 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:06:41,206 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password : admin :  Expected Result: Pass
+2025-07-06 12:06:46,152 -test_login_ddt.py -WARNING - Row 2: Unexpected login failure
+2025-07-06 12:06:46,333 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 12:06:46,334 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password : adm :  Expected Result: Fail
+2025-07-06 12:06:51,292 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 12:06:51,329 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 12:06:51,330 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password : a :  Expected Result: Fail
+2025-07-06 12:06:55,338 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 12:06:55,339 -test_login_ddt.py -ERROR - Some DDT login tests failed.
+2025-07-06 12:09:40,446 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:09:42,467 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:09:42,492 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:09:42,492 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: admin, Expected: Pass
+2025-07-06 12:09:47,361 -test_login_ddt.py -INFO - Actual Title: nopCommerce demo store. Login
+2025-07-06 12:09:47,361 -test_login_ddt.py -WARNING - Row 2: Unexpected login failure
+2025-07-06 12:09:47,533 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 12:09:47,533 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: adm, Expected: Fail
+2025-07-06 12:09:52,683 -test_login_ddt.py -INFO - Actual Title: nopCommerce demo store. Login
+2025-07-06 12:09:52,683 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 12:09:52,706 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 12:09:52,707 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: a, Expected: Fail
+2025-07-06 12:09:56,617 -test_login_ddt.py -INFO - Actual Title: nopCommerce demo store. Login
+2025-07-06 12:09:56,617 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 12:09:56,618 -test_login_ddt.py -INFO - Final Test Status List: ['Fail', 'Pass', 'Pass']
+2025-07-06 12:09:56,618 -test_login_ddt.py -ERROR - Some DDT login tests failed.
+2025-07-06 12:13:12,023 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:13:16,257 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:13:16,290 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:13:16,290 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: admin, Expected: Pass
+2025-07-06 12:13:27,874 -test_login_ddt.py -INFO - Actual Title: Dashboard / nopCommerce administration
+2025-07-06 12:13:27,875 -test_login_ddt.py -INFO - Row 2: Login successful as expected
+2025-07-06 12:29:28,857 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:29:30,960 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:29:30,988 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:29:30,988 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: admin, Expected: Pass
+2025-07-06 12:29:38,734 -test_login_ddt.py -INFO - Actual Title: Dashboard / nopCommerce administration
+2025-07-06 12:29:38,734 -test_login_ddt.py -INFO - Row 2: Login successful as expected
+2025-07-06 12:31:11,998 -test_login_ddt.py -INFO - ========== Test Case: test_login_with_valid_data ==========
+2025-07-06 12:31:14,592 -test_login_ddt.py -INFO - Number of test rows in Excel: 3
+2025-07-06 12:31:14,615 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 12:31:14,615 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: admin, Expected: Pass
+2025-07-06 12:31:22,979 -test_login_ddt.py -INFO - Actual Title: Dashboard / nopCommerce administration
+2025-07-06 12:31:22,979 -test_login_ddt.py -INFO - Row 2: Login successful as expected
+2025-07-06 12:31:25,088 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 12:31:25,088 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: adm, Expected: Fail
+2025-07-06 12:31:28,966 -test_login_ddt.py -INFO - Actual Title: nopCommerce demo store. Login
+2025-07-06 12:31:28,967 -test_login_ddt.py -INFO - Row 3: Login failed as expected
+2025-07-06 12:31:29,006 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 12:31:29,009 -test_login_ddt.py -INFO - Username: admin@yourstore.com, Password: a, Expected: Fail
+2025-07-06 12:31:33,485 -test_login_ddt.py -INFO - Actual Title: nopCommerce demo store. Login
+2025-07-06 12:31:33,486 -test_login_ddt.py -INFO - Row 4: Login failed as expected
+2025-07-06 12:31:33,486 -test_login_ddt.py -INFO - Final Test Status List: ['Pass', 'Pass', 'Pass']
+2025-07-06 12:31:33,486 -test_login_ddt.py -INFO - All DDT login tests passed.
+2025-07-06 13:06:19,934 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:06:21,886 -test_login_ddt.py -ERROR - Login Page did not load: presence_of_element_located() takes 1 positional argument but 2 were given
+2025-07-06 13:06:46,011 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:06:50,530 -test_login_ddt.py -ERROR - Login Page did not load: presence_of_element_located() takes 1 positional argument but 2 were given
+2025-07-06 13:08:11,744 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:08:13,940 -test_login_ddt.py -INFO - Total data rows (excluding header): 3
+2025-07-06 13:08:13,966 -test_login_ddt.py -INFO - 
+--- Row {r} ---
+2025-07-06 13:08:13,966 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = admin Expected Result  = Pass 
+2025-07-06 13:08:18,556 -test_login_ddt.py -INFO - Actual Page Title : Dashboard / nopCommerce administration
+2025-07-06 13:08:18,557 -test_login_ddt.py -INFO - Login Succesfull as expected
+2025-07-06 13:08:20,488 -test_login_ddt.py -INFO - Test Summary : ['Pass']
+2025-07-06 13:08:20,985 -test_login_ddt.py -INFO - 
+--- Row {r} ---
+2025-07-06 13:08:20,986 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = adm Expected Result  = Fail 
+2025-07-06 13:09:49,872 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:09:54,552 -test_login_ddt.py -INFO - Total data rows (excluding header): 3
+2025-07-06 13:09:54,586 -test_login_ddt.py -INFO - 
+--- Row {r} ---
+2025-07-06 13:09:54,586 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = admin Expected Result  = Pass 
+2025-07-06 13:10:03,400 -test_login_ddt.py -INFO - Actual Page Title : Dashboard / nopCommerce administration
+2025-07-06 13:10:03,400 -test_login_ddt.py -INFO - Login Succesfull as expected
+2025-07-06 13:10:05,314 -test_login_ddt.py -INFO - Test Summary : ['Pass']
+2025-07-06 13:10:06,220 -test_login_ddt.py -INFO - 
+--- Row {r} ---
+2025-07-06 13:10:06,220 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = adm Expected Result  = Fail 
+2025-07-06 13:12:59,498 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:13:01,581 -test_login_ddt.py -INFO - Total data rows (excluding header): 3
+2025-07-06 13:13:01,613 -test_login_ddt.py -INFO - 
+--- Row {r} ---
+2025-07-06 13:13:01,613 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = admin Expected Result  = Pass 
+2025-07-06 13:13:09,272 -test_login_ddt.py -INFO - Actual Page Title : Dashboard / nopCommerce administration
+2025-07-06 13:13:09,272 -test_login_ddt.py -INFO - Login Succesfull as expected
+2025-07-06 13:19:52,021 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:19:54,380 -test_login_ddt.py -INFO - Total data rows (excluding header): 3
+2025-07-06 13:19:54,404 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 13:19:54,405 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = admin Expected Result  = Pass 
+2025-07-06 13:20:04,122 -test_login_ddt.py -INFO - Actual Page Title : Dashboard / nopCommerce administration
+2025-07-06 13:20:04,123 -test_login_ddt.py -INFO - Login Succesfull as expected
+2025-07-06 13:20:07,353 -test_login_ddt.py -INFO - Test Summary : ['Pass']
+2025-07-06 13:20:07,381 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 13:20:07,382 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = adm Expected Result  = Fail 
+2025-07-06 13:20:10,798 -test_login_ddt.py -INFO - Actual Page Title : nopCommerce demo store. Login
+2025-07-06 13:20:10,798 -test_login_ddt.py -INFO - Login Failed as Expected
+2025-07-06 13:20:10,799 -test_login_ddt.py -INFO - Test Summary : ['Pass', 'Pass']
+2025-07-06 13:20:10,824 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 13:20:10,824 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = a Expected Result  = Fail 
+2025-07-06 13:20:13,902 -test_login_ddt.py -INFO - Actual Page Title : nopCommerce demo store. Login
+2025-07-06 13:20:13,903 -test_login_ddt.py -INFO - Login Failed as Expected
+2025-07-06 13:20:13,903 -test_login_ddt.py -INFO - Test Summary : ['Pass', 'Pass', 'Pass']

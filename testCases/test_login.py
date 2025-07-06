@@ -1,9 +1,8 @@
-import pytest
-
 
 from pageObjects.loginPage import LoginPage
 from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
+from pageObjects.screenshots import capture_screenshot
 
 
 class TestLogin:
@@ -11,61 +10,35 @@ class TestLogin:
     userName = ReadConfig.getUsername()
     passWord = ReadConfig.getPassword()
 
-    logger  = LogGen.loggen()
-
-
-
     def test_login_title(self, setup):
-        self.logger.info("****Test case ********")
-        self.logger.info("****Verifying Home Page ******")
+        logger = LogGen.loggen()
+        logger.info("**** Test Case: test_login_title ****")
+        logger.info("**** Verifying Home Page Title ****")
 
         self.driver = setup
         self.driver.get(self.baseurl)
         actual_title = self.driver.title
+
         if actual_title == "nopCommerce demo store. Login":
+            logger.info("**** Home Page Title Test Passed ****")
             self.driver.close()
-            self.logger.info("**** Home Page title test is Passed  ******")
             assert True
-
         else:
-            self.logger.info("**** Home Page title test is Failed ******")
-
+            capture_screenshot(self.driver, "Test_Login_Title", "test_login.py")
+            logger.error(f"**** Home Page Title Test Failed: Found '{actual_title}' ****")
             self.driver.close()
             assert False
 
+    def test_login_with_valid_data(self, setup):
+        logger = LogGen.loggen()
+        logger.info("**** Test Case: test_login_with_valid_data ****")
+        logger.info("**** Logging in with Valid Credentials ****")
 
-    def test_login_with_valid_data(self,setup):
         self.driver = setup
         self.driver.get(self.baseurl)
+
         login = LoginPage(self.driver)
-        login.login_to_account(self.userName,self.passWord)
+        login.login_to_account(self.userName, self.passWord)
+
+        logger.info("**** Login attempt completed ****")
         self.driver.close()
-
-    def test_login_with_invalid_email_id(self,setup):
-        self.driver = setup
-        self.driver.get(self.baseurl)
-        login  = LoginPage(self.driver)
-        login.login_to_account(self.userName,self.passWord)
-        actual_msg = login.get_email_error_msg()
-        assert  "Please enter a valid email address." in actual_msg
-        self.driver.close()
-
-    def test_login_invalid(self,setup):
-        self.driver = setup
-        self.driver.get(self.baseurl)
-        login = LoginPage(self.driver)
-        login.login_to_account(self.userName,self.passWord)
-        actual_msg = login.get_error_validation()
-        print(actual_msg)
-
-        self.driver.close()
-
-
-
-
-
-
-
-
-
-

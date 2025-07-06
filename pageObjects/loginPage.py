@@ -12,7 +12,7 @@ class LoginPage(BasePage):
     link_logout= (By.LINK_TEXT,"Logout")
     email_error_message = (By.ID,"Email-error")
     error_validation = (By.XPATH,"div[class='message-error validation-summary-errors'] ul li")
-
+    logout = (By.LINK_TEXT,"Logout")
 
     def login_to_account (self, username,password,timeout=10):
         try:
@@ -23,7 +23,7 @@ class LoginPage(BasePage):
             password_filed = WebDriverWait(self.driver,timeout,poll_frequency=0.5).until(
                 EC.visibility_of_element_located(self.Password_input)
             )
-            password_filed.click()
+            password_filed.clear()
             password_filed.send_keys(password)
 
             login_button = WebDriverWait(self.driver, timeout, poll_frequency=0.5).until(EC.visibility_of_element_located(self.Login_button))
@@ -49,6 +49,13 @@ class LoginPage(BasePage):
             return  error_validation_msg
         except NoSuchElementException:
             print("Invalid result for while validating login")
+
+    def logout(self):
+        try:
+            return  WebDriverWait(self.driver,timeout=10,poll_frequency=5).until(EC.visibility_of_element_located(self.link_logout)).click()
+        except NoSuchElementException:
+            print("Invalid result for while validating login")
+
 
 
 
