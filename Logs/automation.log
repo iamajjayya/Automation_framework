@@ -368,3 +368,23 @@
 2025-07-06 13:20:13,902 -test_login_ddt.py -INFO - Actual Page Title : nopCommerce demo store. Login
 2025-07-06 13:20:13,903 -test_login_ddt.py -INFO - Login Failed as Expected
 2025-07-06 13:20:13,903 -test_login_ddt.py -INFO - Test Summary : ['Pass', 'Pass', 'Pass']
+2025-07-06 13:23:39,399 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-06 13:23:41,282 -test_login_ddt.py -INFO - Total data rows (excluding header): 3
+2025-07-06 13:23:41,305 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-06 13:23:41,306 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = admin Expected Result  = Pass 
+2025-07-06 13:23:54,544 -test_login_ddt.py -INFO - Actual Page Title : Dashboard / nopCommerce administration
+2025-07-06 13:23:54,544 -test_login_ddt.py -INFO - Login Succesfull as expected
+2025-07-06 13:23:57,074 -test_login_ddt.py -INFO - Test Summary : ['Pass']
+2025-07-06 13:23:57,107 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-06 13:23:57,108 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = adm Expected Result  = Fail 
+2025-07-06 13:24:00,042 -test_login_ddt.py -INFO - Actual Page Title : nopCommerce demo store. Login
+2025-07-06 13:24:00,043 -test_login_ddt.py -INFO - Login Failed as Expected
+2025-07-06 13:24:00,043 -test_login_ddt.py -INFO - Test Summary : ['Pass', 'Pass']
+2025-07-06 13:24:00,067 -test_login_ddt.py -INFO - 
+--- Row 4 ---
+2025-07-06 13:24:00,068 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = a Expected Result  = Fail 
+2025-07-06 13:24:03,174 -test_login_ddt.py -INFO - Actual Page Title : nopCommerce demo store. Login
+2025-07-06 13:24:03,174 -test_login_ddt.py -INFO - Login Failed as Expected
+2025-07-06 13:24:03,174 -test_login_ddt.py -INFO - Test Summary : ['Pass', 'Pass', 'Pass']
