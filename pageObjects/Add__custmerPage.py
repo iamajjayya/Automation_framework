@@ -1,36 +1,112 @@
 import time
-from selenium.webdriver.support.ui import  Select
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class AddCustomer:
     link_customer_menu_xpath = "//a[@href='#']//p[contains(text(),'Customers')]"
-    link_customer_menuitems_xpath = "//a[@href='/Admin/Customer/List']"
+    link_customer_menuitems_xpath = "//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]"
     link_addnew_xpath = "//a[@href='/Admin/Customer/Create']"
     input_email_xpath = "//input[@id='Email']"
-    input_pass_xpath ="//input[@id='Password']"
+    input_pass_xpath = "//input[@id='Password']"
     input_firstname_xpath = "//input[@id='FirstName']"
     input_lastname_xpath = "//input[@id='LastName']"
-    radio_male_xpath ="//input[@id='Gender_Male']"
-    radio_female_xpath ="//input[@id='Gender_Female']"
-    input_comname_xpath ="//input[@id='Company']"
-    checkbox_tax_xpath ="//input[@id='IsTaxExempt']"
-    search_newsletter_xpath = "//span[@aria-expanded='true']//input[@type='search']"
+    radio_male_xpath = "//input[@id='Gender_Male']"
+    radio_female_xpath = "//input[@id='Gender_Female']"
+    input_comname_xpath = "//input[@id='Company']"
+    checkbox_tax_xpath = "//input[@id='IsTaxExempt']"
+    search_newsletter_xpath = "//input[@class='select2-search__field']"
     news_nopcommerce = "//span[@class='selection']//span[@role='combobox']//li[@title='nopCommerce admin demo store']"
-    customer_role_input ="//span[@aria-expanded='true']//input[@role='searchbox']"
-    customerrole_li_xpath ="//li[@title='Registered']"
-    checked_active_xpath='//input[@data-val-required="The Active field is required."]'
+    customer_role_input = "//span[@aria-expanded='true']//input[@role='searchbox']"
+    customerrole_li_xpath = "//li[@title='Registered']"
+    select_vendors_id = '//select[@id="VendorId"]'
+    checked_active_xpath = '//input[@data-val-required="The Active field is required."]'
     checked_password_xpath = '//input[@data-val-required="The Customer must change password field is required."]'
-    text_area_comment_xpath ='//textarea[@class="form-control"]'
-    button_save_xpath ='//button[@name="save"]'
+    text_area_comment_xpath = '//textarea[@class="form-control"]'
+    button_save_xpath = '//button[@name="save"]'
 
     def __init__(self, driver):
         self.driver = driver
 
     def clickOnCustomerMenu(self):
-        self.driver.find_element_by_xpath(self.link_customer_menu_xpath).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, self.link_customer_menu_xpath))
+        ).click()
 
-    def cliclonCustomerMenuitems(self):
-        self.driver.find_element_by_xpath(self.link_customer_menuitems_xpath).click()
+    def clickOnCustomerMenuitems(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, self.link_customer_menuitems_xpath))
+        ).click()
+        time.sleep(5)
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, self.link_customer_menuitems_xpath))
+        ).click()
 
     def clickOn_Addnew(self):
-        self.driver.find_element_by_xpath(self.link_addnew_xpath).click()
+        WebDriverWait(self.driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, self.link_addnew_xpath))
+        ).click()
 
+    def setEmail(self, email):
+        self.driver.find_element(By.XPATH, self.input_email_xpath).send_keys(email)
+
+    def setPassword(self, password):
+        self.driver.find_element(By.XPATH, self.input_pass_xpath).send_keys(password)
+
+    def setfirstname(self, name):
+        self.driver.find_element(By.XPATH, self.input_firstname_xpath).send_keys(name)
+
+    def setLastName(self, lastname):
+        self.driver.find_element(By.XPATH, self.input_lastname_xpath).send_keys(lastname)
+
+    def setgender(self, gender):
+        if gender == "Male":
+            self.driver.find_element(By.XPATH, self.radio_male_xpath).click()
+        elif gender == "Female":
+            self.driver.find_element(By.XPATH, self.radio_female_xpath).click()
+        else:
+            self.driver.find_element(By.XPATH, self.radio_male_xpath).click()
+
+    def setCompanyName(self, CmpName):
+        self.driver.find_element(By.XPATH, self.input_comname_xpath).send_keys(CmpName)
+
+    def taxextempt(self):
+        self.driver.find_element(By.XPATH, self.checkbox_tax_xpath).click()
+
+    def newsletter(self, options):
+        self.driver.find_element(By.XPATH, self.search_newsletter_xpath).click()
+        time.sleep(1)
+        if options == "nopCommerce admin demo store":
+            self.driver.find_element(By.XPATH, self.news_nopcommerce).click()
+        else:
+            self.driver.find_element(By.XPATH, self.news_nopcommerce).click()
+
+    def setCumstomerrole(self, role):
+        self.driver.find_element(By.XPATH, self.customer_role_input).click()
+        time.sleep(2)
+        if role == "Registered":
+            self.role_item = self.driver.find_element(By.XPATH, self.customerrole_li_xpath)
+        else:
+            role_item = self.driver.find_element(By.XPATH, self.customerrole_li_xpath)
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", self.role_item)
+        time.sleep(1)  # Optional: add short wait for scroll to complete
+
+        # Click via JavaScript (to avoid "not clickable" issues)
+        self.driver.execute_script("arguments[0].click();",self.role_item)
+
+    def setMangerofvendor(self, value):
+        vendor_dropdown = Select(self.driver.find_element(By.XPATH, self.select_vendors_id))
+        vendor_dropdown.select_by_visible_text(value)
+
+    def active_checkbox(self):
+        self.driver.find_element(By.XPATH, self.checked_active_xpath).click()
+
+    def customerchangedpassword(self):
+        self.driver.find_element(By.XPATH, self.checked_password_xpath).click()
+
+    def adminComment(self, comment):
+        self.driver.find_element(By.XPATH, self.text_area_comment_xpath).send_keys(comment)
+
+    def saveCustomerdetails(self):
+        self.driver.find_element(By.XPATH, self.button_save_xpath).click()

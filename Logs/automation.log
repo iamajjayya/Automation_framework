@@ -388,3 +388,56 @@
 2025-07-06 13:24:03,174 -test_login_ddt.py -INFO - Actual Page Title : nopCommerce demo store. Login
 2025-07-06 13:24:03,174 -test_login_ddt.py -INFO - Login Failed as Expected
 2025-07-06 13:24:03,174 -test_login_ddt.py -INFO - Test Summary : ['Pass', 'Pass', 'Pass']
+2025-07-08 22:18:11,283 -test_addCustomer.py -INFO - ******** Test__003 Addcustomer ************
+2025-07-08 22:34:14,045 -test_addCustomer.py -INFO - ******** Test__003 Addcustomer ************
+2025-07-08 22:34:21,501 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:37:08,396 -test_addCustomer.py -INFO - ******** Test__003 Addcustomer ************
+2025-07-08 22:37:16,477 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:38:39,779 -test_addCustomer.py -INFO - ******** Test__003 Addcustomer ************
+2025-07-08 22:38:45,847 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:40:26,485 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:40:33,497 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:43:53,053 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:44:02,129 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:48:48,852 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:48:59,476 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:49:25,938 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:49:37,714 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:50:10,491 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:50:18,458 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:50:51,492 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:51:00,319 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:51:43,319 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:51:53,309 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:54:45,571 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:54:53,296 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:56:53,802 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:57:01,346 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:57:23,134 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:57:31,728 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 22:58:18,539 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 22:58:21,511 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:02:24,962 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:02:35,444 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:04:59,081 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:05:06,712 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:05:59,507 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:06:04,206 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:07:06,802 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:07:13,796 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:08:13,822 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:08:25,317 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:08:48,960 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:09:00,467 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:09:22,928 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:09:33,732 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:13:49,325 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:13:58,725 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:15:07,361 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:15:12,381 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:15:26,563 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-08 23:15:58,136 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:16:03,199 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:16:34,433 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-08 23:16:38,824 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-08 23:16:54,204 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
