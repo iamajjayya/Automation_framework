@@ -28,12 +28,13 @@ class Test__003_AddCustomer:
         self.logger.info("********** Starting Add Customer Test ******************")
 
         self.addcust = AddCustomer(self.driver)
-        self.addcust.clickOnCustomerMenu()
-        self.addcust.clickOnCustomerMenuitems()
+        self.driver.get("https://admin-demo.nopcommerce.com/Admin/Customer/List")
+
+
         self.addcust.clickOn_Addnew()
 
         email = self.random_email()
-        self.addcust.setEmail(email)
+        self.addcust.setEmail("jeeva1@gmail.com")
         self.addcust.setPassword("test123")
         self.addcust.setfirstname("Ajay")
         self.addcust.setLastName("GV")
@@ -41,7 +42,6 @@ class Test__003_AddCustomer:
         self.addcust.setCompanyName("OpenAI")
         self.addcust.taxextempt()
         self.addcust.setMangerofvendor("Vendor 1")
-        self.addcust.active_checkbox()
         self.addcust.customerchangedpassword()
         self.addcust.adminComment("This is a test customer created using automation.")
         self.addcust.saveCustomerdetails()

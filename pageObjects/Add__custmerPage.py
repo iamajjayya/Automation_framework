@@ -19,9 +19,10 @@ class AddCustomer:
     search_newsletter_xpath = "//input[@class='select2-search__field']"
     news_nopcommerce = "//span[@class='selection']//span[@role='combobox']//li[@title='nopCommerce admin demo store']"
     customer_role_input = "//span[@aria-expanded='true']//input[@role='searchbox']"
-    customerrole_li_xpath = "//li[@title='Registered']"
+    customerrole_li_xpath = "//li[@id='select2-SelectedCustomerRoleIds-result-c5mh-3']"
     select_vendors_id = '//select[@id="VendorId"]'
-    checked_active_xpath = '//input[@data-val-required="The Active field is required."]'
+    checked_active_xpath = "//input[@id='Active']"
+
     checked_password_xpath = '//input[@data-val-required="The Customer must change password field is required."]'
     text_area_comment_xpath = '//textarea[@class="form-control"]'
     button_save_xpath = '//button[@name="save"]'
@@ -30,20 +31,53 @@ class AddCustomer:
         self.driver = driver
 
     def clickOnCustomerMenu(self):
-        WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.link_customer_menu_xpath))
-        ).click()
+        xpath = self.link_customer_menu_xpath
+
+        for attempt in range(2):
+            try:
+                # Wait for overlays/loaders to disappear, if any
+                WebDriverWait(self.driver, 10).until(
+                    EC.invisibility_of_element_located((By.CSS_SELECTOR, ".overlay, .loading, .spinner"))
+                )
+
+                # Wait until clickable
+                element = WebDriverWait(self.driver, 10).until(
+                    EC.element_to_be_clickable((By.XPATH, xpath))
+                )
+
+                # Scroll into view before clicking
+                self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
+
+                # Try clicking
+                element.click()
+                return  # Success, exit method
+
+            except Exception as e:
+                print(f"Attempt {attempt + 1} to click menu failed. Retrying... Error: {e}")
+                time.sleep(1)
+
+        # Final fallback - JavaScript click
+        try:
+            element = self.driver.find_element(By.XPATH, xpath)
+            self.driver.execute_script("arguments[0].click();", element)
+            print("JS click worked as fallback.")
+        except Exception as final_e:
+            print(f"JS click also failed. Reason: {final_e}")
 
     def clickOnCustomerMenuitems(self):
-        WebDriverWait(self.driver, 10).until(
+        WebDriverWait(self.driver,timeout=100).until(
+            EC.element_to_be_clickable((By.XPATH,self.link_customer_menuitems_xpath))
+        ).click()
+        WebDriverWait(self.driver, timeout=100).until(
             EC.element_to_be_clickable((By.XPATH, self.link_customer_menuitems_xpath))
         ).click()
-        time.sleep(5)
-        WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, self.link_customer_menuitems_xpath))
+    def clickonCustomerMenuitems_dropdown(self):
+        WebDriverWait(self.driver,timeout=10).until(
+            EC.element_to_be_clickable((By.XPATH,self.link_customer_dropdown_menuitems_xpath))
         ).click()
 
     def clickOn_Addnew(self):
+        time.sleep(10)
         WebDriverWait(self.driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, self.link_addnew_xpath))
         ).click()
@@ -82,18 +116,20 @@ class AddCustomer:
         else:
             self.driver.find_element(By.XPATH, self.news_nopcommerce).click()
 
-    def setCumstomerrole(self, role):
+    def setCumstomerrole(self):
         self.driver.find_element(By.XPATH, self.customer_role_input).click()
-        time.sleep(2)
-        if role == "Registered":
-            self.role_item = self.driver.find_element(By.XPATH, self.customerrole_li_xpath)
-        else:
-            role_item = self.driver.find_element(By.XPATH, self.customerrole_li_xpath)
-        self.driver.execute_script("arguments[0].scrollIntoView(true);", self.role_item)
-        time.sleep(1)  # Optional: add short wait for scroll to complete
 
-        # Click via JavaScript (to avoid "not clickable" issues)
-        self.driver.execute_script("arguments[0].click();",self.role_item)
+        # if role == "Registered":
+        #
+        # else:
+        # #     self.role_item = self.driver.find_element(By.XPATH, self.customerrole_li_xpath)
+        # self.driver.execute_script("arguments[0].scrollIntoView(true);", self.role_item)
+        # time.sleep(1)  # Optional: add short wait for scroll to complete
+        #
+        # self.driver.execute_script("arguments[0].click();",self.role_item)
+
+    def selectRegistrer(self):
+        self.driver.find_element(By.XPATH, self.customerrole_li_xpath)
 
     def setMangerofvendor(self, value):
         vendor_dropdown = Select(self.driver.find_element(By.XPATH, self.select_vendors_id))
