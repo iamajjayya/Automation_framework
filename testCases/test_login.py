@@ -1,3 +1,4 @@
+import pytest
 
 from pageObjects.loginPage import LoginPage
 from utilities.readProperties import ReadConfig
@@ -10,6 +11,8 @@ class TestLogin:
     userName = ReadConfig.getUsername()
     passWord = ReadConfig.getPassword()
 
+
+    @pytest.mark.regression
     def test_login_title(self, setup):
         logger = LogGen.loggen()
         logger.info("**** Test Case: test_login_title ****")
@@ -28,7 +31,8 @@ class TestLogin:
             logger.error(f"**** Home Page Title Test Failed: Found '{actual_title}' ****")
             self.driver.close()
             assert False
-
+    @pytest.mark.regression
+    @pytest.mark.sanity
     def test_login_with_valid_data(self, setup):
         logger = LogGen.loggen()
         logger.info("**** Test Case: test_login_with_valid_data ****")

@@ -547,3 +547,188 @@
 2025-07-13 00:02:44,581 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
 2025-07-13 00:05:42,190 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
 2025-07-13 00:06:11,560 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 13:55:16,703 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 13:55:22,669 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 13:55:38,256 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 13:56:21,840 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 13:56:27,872 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 13:56:40,657 -test_addCustomer.py -ERROR - **** Add Customer Test Failed: Found  ****
+2025-07-13 14:11:35,162 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:11:40,742 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:11:40,743 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:11:56,559 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:15:26,591 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:15:33,336 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:15:33,337 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:15:49,292 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:24:49,122 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:24:56,174 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:24:56,174 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:25:12,105 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:26:49,507 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:26:55,411 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:26:55,412 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:27:11,807 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:28:39,827 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:28:46,935 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:28:46,935 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:29:02,198 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:35:17,530 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:35:28,542 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:35:28,543 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:35:49,060 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:35:59,398 -test_addCustomer.py -INFO - Test Failed while Adding customer details 
+2025-07-13 14:38:30,434 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:38:54,224 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:38:54,225 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:39:10,525 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:39:20,580 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 14:44:41,130 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 14:44:47,813 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 14:44:47,813 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 14:45:04,565 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 14:45:14,638 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 16:17:59,699 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 16:18:04,652 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 16:18:04,653 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 16:18:20,726 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 16:18:30,806 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 16:18:50,346 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 16:18:56,567 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 16:18:56,568 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 16:19:08,459 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 16:22:28,650 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 16:22:34,471 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 16:22:34,471 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 16:22:43,329 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 16:24:36,945 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 16:24:43,069 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 16:24:43,069 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 16:24:55,091 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 16:26:31,762 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 16:26:49,558 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 16:26:49,559 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 16:27:09,715 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 16:27:15,110 -test_searchCustomer.py -INFO - *** searchbyCustmeremail Test passed ***
+2025-07-13 16:30:08,783 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 16:30:14,782 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 16:30:14,783 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 16:30:23,809 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 18:41:04,585 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 18:41:07,750 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 18:41:07,750 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 18:41:20,798 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 18:45:51,099 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 18:46:06,340 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 18:46:06,340 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 18:46:10,503 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 18:46:16,610 -test_searchCustomer.py -INFO - *** searchbyCustmeremail Test Failed ***
+2025-07-13 18:50:49,741 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 18:50:58,866 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 18:50:58,867 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 18:51:08,992 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 18:51:14,459 -test_searchCustomer.py -INFO - *** Search by customer email test failed: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id="customers-grid"]//tbody/tr/td[2]"}
+  (Session info: chrome=138.0.7204.101); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x0xed44a3+62419]
+	GetHandleVerifier [0x0xed44e4+62484]
+	(No symbol) [0x0xd12133]
+	(No symbol) [0x0xd5a8fe]
+	(No symbol) [0x0xd5ac9b]
+	(No symbol) [0x0xd50131]
+	(No symbol) [0x0xd7f4b4]
+	(No symbol) [0x0xd50054]
+	(No symbol) [0x0xd7f6e4]
+	(No symbol) [0x0xda087a]
+	(No symbol) [0x0xd7f266]
+	(No symbol) [0x0xd4e852]
+	(No symbol) [0x0xd4f6f4]
+	GetHandleVerifier [0x0x1144793+2619075]
+	GetHandleVerifier [0x0x113fbaa+2599642]
+	GetHandleVerifier [0x0xefb04a+221050]
+	GetHandleVerifier [0x0xeeb2c8+156152]
+	GetHandleVerifier [0x0xef1c7d+183213]
+	GetHandleVerifier [0x0xedc388+94904]
+	GetHandleVerifier [0x0xedc512+95298]
+	GetHandleVerifier [0x0xec766a+9626]
+	BaseThreadInitThunk [0x0x766f5d49+25]
+	RtlInitializeExceptionChain [0x0x77d3d1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x77d3d131+561]
+ ***
+2025-07-13 18:54:37,582 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 18:54:44,964 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 18:54:44,964 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 18:54:49,802 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 18:54:56,240 -test_searchCustomer.py -INFO - *** Search by customer email test passed ***
+2025-07-13 18:58:50,811 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 18:58:55,830 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 18:58:55,830 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 18:59:03,882 -test_searchCustomer.py -INFO - *** Searching customer by emailID ***
+2025-07-13 18:59:09,917 -test_searchCustomer.py -INFO - *** Search by customer email test passed ***
+2025-07-13 18:59:58,195 -test_searchCustomerByname.py -INFO - **** Search CustomerByName **** 
+2025-07-13 19:00:00,687 -test_searchCustomerByname.py -INFO - *** Login succesful ***
+2025-07-13 19:00:00,687 -test_searchCustomerByname.py -INFO - *** Starting search customer By Name ***
+2025-07-13 19:00:10,797 -test_searchCustomerByname.py -INFO - *** Searching customer by emailID ***
+2025-07-13 19:00:16,266 -test_searchCustomerByname.py -INFO - *** Search by customer name test failed: assert False is True ***
+2025-07-13 19:02:55,821 -test_searchCustomerByname.py -INFO - **** Search CustomerByName **** 
+2025-07-13 19:03:01,183 -test_searchCustomerByname.py -INFO - *** Login succesful ***
+2025-07-13 19:03:01,183 -test_searchCustomerByname.py -INFO - *** Starting search customer By Name ***
+2025-07-13 19:03:09,245 -test_searchCustomerByname.py -INFO - *** Searching customer by emailID ***
+2025-07-13 19:03:15,002 -test_searchCustomerByname.py -INFO - *** Search by customer name test passed ***
+2025-07-13 21:19:36,449 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 21:19:43,907 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 21:19:43,908 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 21:20:00,204 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 21:20:10,279 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 21:20:15,067 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-13 21:20:15,067 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-13 21:20:24,627 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-13 21:44:16,838 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 21:44:25,588 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 21:44:25,589 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 21:44:40,056 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 21:44:50,124 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 21:44:55,264 -test_login.py -INFO - **** Test Case: test_login_title ****
+2025-07-13 21:44:55,264 -test_login.py -INFO - **** Verifying Home Page Title ****
+2025-07-13 21:44:58,121 -test_login.py -INFO - **** Home Page Title Test Passed ****
+2025-07-13 21:45:02,601 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-13 21:45:02,601 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-13 21:45:09,488 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-13 21:45:13,970 -test_login_ddt.py -INFO - ========== DDT Login Test Started ==========
+2025-07-13 21:45:15,800 -test_login_ddt.py -INFO - Total data rows (excluding header): 3
+2025-07-13 21:45:15,826 -test_login_ddt.py -INFO - 
+--- Row 2 ---
+2025-07-13 21:45:15,826 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = admin Expected Result  = Pass 
+2025-07-13 21:45:20,700 -test_login_ddt.py -INFO - Actual Page Title : Dashboard / nopCommerce administration
+2025-07-13 21:45:20,700 -test_login_ddt.py -INFO - Login Succesfull as expected
+2025-07-13 21:45:21,080 -test_login_ddt.py -INFO - Test Summary : ['Pass']
+2025-07-13 21:45:21,114 -test_login_ddt.py -INFO - 
+--- Row 3 ---
+2025-07-13 21:45:21,114 -test_login_ddt.py -INFO - Input :  Usernmae = admin@yourstore.com Password = adm Expected Result  = Fail 
+2025-07-13 21:45:36,755 -test_searchCustomer.py -INFO - **** Search CustomerByEmail **** 
+2025-07-13 21:45:39,208 -test_searchCustomer.py -INFO - *** Login succesful ***
+2025-07-13 21:45:39,208 -test_searchCustomer.py -INFO - *** Starting search customer By email ***
+2025-07-13 21:45:45,734 -test_searchCustomerByname.py -INFO - **** Search CustomerByName **** 
+2025-07-13 21:46:12,021 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 21:46:16,114 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 21:46:16,115 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 21:46:32,220 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 21:46:42,321 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 21:46:47,526 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-13 21:46:47,526 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-13 21:46:52,055 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-13 21:50:41,996 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 21:50:45,737 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 21:50:45,738 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 21:51:16,218 -test_addCustomer.py -ERROR - **** Add Customer Test Failed: Found  ****
+2025-07-13 21:51:21,543 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-13 21:51:21,543 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-13 21:51:28,671 -test_login.py -INFO - **** Login attempt completed ****
+2025-07-13 21:52:08,334 -test_addCustomer.py -INFO - ******** Test__003 AddCustomer ************
+2025-07-13 21:52:14,855 -test_addCustomer.py -INFO - ********** Login Succesful ******************
+2025-07-13 21:52:14,855 -test_addCustomer.py -INFO - ********** Starting Add Customer Test ******************
+2025-07-13 21:52:30,161 -test_addCustomer.py -INFO - ********** Customer added successfully ******************
+2025-07-13 21:52:40,234 -test_addCustomer.py -INFO - Succesfull customer details Added
+2025-07-13 21:52:45,034 -test_login.py -INFO - **** Test Case: test_login_with_valid_data ****
+2025-07-13 21:52:45,034 -test_login.py -INFO - **** Logging in with Valid Credentials ****
+2025-07-13 21:52:54,139 -test_login.py -INFO - **** Login attempt completed ****

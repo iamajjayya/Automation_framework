@@ -1,7 +1,6 @@
 import os
 import time
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.devtools.v135.indexed_db import clear_object_store
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -10,12 +9,13 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import LogGen
 from pageObjects.screenshots import capture_screenshot
 from utilities import ExcelUtils
-
+import pytest
 
 class Test_002_DDT_Login:
     baseUrl = ReadConfig.getApplicationURL()
     path = os.path.join(os.path.dirname(os.path.dirname(__file__)),"TestData","login.xlsx")
 
+    @pytest.mark.regression
     def test_login_with_valid_data(self,setup):
         self.driver = setup
         logger = LogGen.loggen()
