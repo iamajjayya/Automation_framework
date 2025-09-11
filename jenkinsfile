@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t automation_framework:latest .'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh 'docker run automation_framework:latest'
+            }
+        }
+
+        stage('Deploy to QA') {
+            steps {
+                echo 'Deploying to QA...'
+                // later we will add docker-compose or kubectl commands
+            }
+        }
+    }
+}
