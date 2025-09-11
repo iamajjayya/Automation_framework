@@ -1,6 +1,12 @@
 pipeline {
     agent any
 
+    environment {
+        IMAGE_NAME = "automation_framework"
+        REGISTRY = "docker.io"   // or ghcr.io if using GitHub Container Registry
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds') // Jenkins credentials ID
+    }
+
     stages {
         stage('Checkout Code') {
             steps {
@@ -10,20 +16,54 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t automation_framework:latest .'
+                script {
+                    sh "docker build -t ${IMAGE_NAME}:${BUILD_NUMBER} ."
+                }
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Tests in Docker') {
             steps {
-                sh 'docker run automation_framework:latest'
+                script {
+                    sh "docker run --rm ${IMAGE_NAME}:${BUILD_NUMBER}"
+                }
+            }
+        }
+
+        stage('Push to Registry') {
+            steps {
+                script {
+                    withDockerRegistry([credentialsId: 'dockerhub-creds', url: 'https://index.docker.io/v1/']) {
+                        sh "docker tag ${IMAGE_NAME}:${BUILD_NUMBER} ${DOCKERHUB_CREDENTIALS_USR}/${IMAGE_NAME}:${BUILD_NUMBER}"
+                        sh "docker push ${DOCKERHUB_CREDENTIALS_USR}/${IMAGE_NAME}:${BUILD_NUMBER}"
+                    }
+                }
             }
         }
 
         stage('Deploy to QA') {
             steps {
-                echo 'Deploying to QA...'
-                // later we will add docker-compose or kubectl commands
+                echo "Deploying ${IMAGE_NAME}:${BUILD_NUMBER} to QA environment..."
+                // For now just echo, later we add docker-compose or kubectl
+            }
+        }
+
+        stage('Deploy to Staging') {
+            when {
+                branch 'staging'
+            }
+            steps {
+                echo "Deploying ${IMAGE_NAME}:${BUILD_NUMBER} to STAGING environment..."
+            }
+        }
+
+        stage('Deploy to Production') {
+            when {
+                branch 'main'
+            }
+            steps {
+                input message: "Approve deploy to Production?", ok: "Deploy"
+                echo "Deploying ${IMAGE_NAME}:${BUILD_NUMBER} to PRODUCTION..."
             }
         }
     }
