@@ -3,9 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "iamajjayya/automation_framework:teastin_main"
-        DOCKERHUB_CREDENTIALS = "dockerhub-creds" // Jenkins credentials ID
-        DOCKERHUB_REPO = "iamajjayya/automation_framework"
-        BROWSER = "chrome" // default browser for tests
+        BROWSER = "chrome"
     }
 
     stages {
@@ -19,31 +17,23 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                script {
-                    // Build Docker image using Docker Pipeline plugin
-                    docker.build(DOCKER_IMAGE)
-                }
+                sh "docker build -t ${DOCKER_IMAGE} ."
             }
         }
 
         stage('Run Tests') {
             steps {
-                script {
-                    // Run tests inside the Docker container
-                    docker.image(DOCKER_IMAGE).inside("-e BROWSER=${BROWSER}") {
-                        sh 'pytest -s -v --html=./Reports/report.html testCases/'
-                    }
-                }
+                sh "docker run --rm -e BROWSER=${BROWSER} ${DOCKER_IMAGE} pytest -s -v --html=./Reports/report.html testCases/"
             }
         }
 
         stage('Push Docker Image') {
             steps {
-                script {
-                    // Login and push to Docker Hub
-                    docker.withRegistry('https://index.docker.io/v1/', DOCKERHUB_CREDENTIALS) {
-                        docker.image(DOCKER_IMAGE).push()
-                    }
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                    sh """
+                        echo $PASSWORD | docker login -u $USERNAME --password-stdin
+                        docker push ${DOCKER_IMAGE}
+                    """
                 }
             }
         }
@@ -52,9 +42,6 @@ pipeline {
     post {
         always {
             echo "Pipeline finished!"
-        }
-        success {
-            echo "Pipeline succeeded!"
         }
         failure {
             echo "Pipeline failed!"
