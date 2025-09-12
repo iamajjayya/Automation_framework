@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'python:3.11-slim'
+            args '-u root:root'
+        }
+    }
 
     environment {
         BROWSER = "chrome"
@@ -8,8 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'teastin_main',
-                    url: 'https://github.com/iamajjayya/Automation_framework.git'
+                git branch: 'teastin_main', url: 'https://github.com/iamajjayya/Automation_framework.git'
             }
         }
 
