@@ -2,47 +2,57 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "iamajjayya/automation_framework"
-        BRANCH = "${params.BRANCH ?: 'teastin_main'}"
-    }
-
-    parameters {
-        string(name: 'BRANCH', defaultValue: 'main', description: 'Git branch to build')
+        DOCKER_IMAGE = "iamajjayya/automation_framework:teastin_main"
+        DOCKERHUB_CREDENTIALS = "dockerhub-creds" // Jenkins credentials ID
+        DOCKERHUB_REPO = "iamajjayya/automation_framework"
+        BROWSER = "chrome" // default browser for tests
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: "${params.BRANCH}", url: 'https://github.com/iamajjayya/Automation_framework.git'
+                git branch: 'teastin_main',
+                    url: 'https://github.com/iamajjayya/Automation_framework.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh "docker build -t ${env.DOCKER_IMAGE}:${params.BRANCH} ."
+                script {
+                    // Build Docker image using Docker Pipeline plugin
+                    docker.build(DOCKER_IMAGE)
+                }
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh "docker run --rm --shm-size=2g ${env.DOCKER_IMAGE}:${params.BRANCH}"
+                script {
+                    // Run tests inside the Docker container
+                    docker.image(DOCKER_IMAGE).inside("-e BROWSER=${BROWSER}") {
+                        sh 'pytest -s -v --html=./Reports/report.html testCases/'
+                    }
+                }
             }
         }
 
         stage('Push Docker Image') {
             steps {
-                withCredentials([string(credentialsId: 'docker-hub-token', variable: 'DOCKER_TOKEN')]) {
-                    sh """
-                    echo $DOCKER_TOKEN | docker login -u iamajjayya --password-stdin
-                    docker push ${env.DOCKER_IMAGE}:${params.BRANCH}
-                    """
+                script {
+                    // Login and push to Docker Hub
+                    docker.withRegistry('https://index.docker.io/v1/', DOCKERHUB_CREDENTIALS) {
+                        docker.image(DOCKER_IMAGE).push()
+                    }
                 }
             }
         }
     }
 
     post {
+        always {
+            echo "Pipeline finished!"
+        }
         success {
             echo "Pipeline succeeded!"
         }
