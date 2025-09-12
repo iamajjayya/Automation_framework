@@ -1,104 +1,53 @@
 pipeline {
-    agent { docker { image 'python:3.10' } }
-
-    parameters {
-        string(name: "BRANCH", defaultValue: "main", description: "Git branch to build")
-        choice(name: "DEPLOY_ENV", choices: ['staging', 'production'], description: 'Where to deploy')
-    }
+    agent any
 
     environment {
         DOCKER_IMAGE = "iamajjayya/automation_framework"
-        PYTHON_VERSION = "3.10"
+        BRANCH = "${params.BRANCH ?: 'main'}"
+    }
+
+    parameters {
+        string(name: 'BRANCH', defaultValue: 'main', description: 'Git branch to build')
     }
 
     stages {
+
         stage('Checkout') {
             steps {
-                echo "Checking out code from branch: ${params.BRANCH}"
-                git branch: "${params.BRANCH}", url: "https://github.com/iamajjayya/Automation_framework.git"
-            }
-        }
-         
-        stage('Install Dependencies') {
-            steps {
-                echo "Setting up Python environment"
-                sh "pip install --upgrade pip"
-                sh "pip install -r requirements.txt"
-            }
-        } 
-
-        stage('Run Tests') {
-            steps {
-                echo "Running pytest tests"
-                sh """
-                  pytest --junitxml=reports/results.xml --html=reports/report.html --self-contained-html
-                """
-                junit "reports/results.xml"
-                archiveArtifacts artifacts: "reports/*", fingerprint: true
+                git branch: "${params.BRANCH}", url: 'https://github.com/iamajjayya/Automation_framework.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                echo "Building Docker Image: ${env.DOCKER_IMAGE}:${params.BRANCH}"
                 sh "docker build -t ${env.DOCKER_IMAGE}:${params.BRANCH} ."
             }
         }
 
-        stage("Push Docker Image") {
+        stage('Run Tests') {
             steps {
-                 withCredentials([string(credentialsId: 'docker-hub-token', variable: 'DOCKER_TOKEN')]) {
-                    echo "Pushing Docker image to Docker Hub"
+                sh "docker run --rm --shm-size=2g ${env.DOCKER_IMAGE}:${params.BRANCH}"
+            }
+        }
+
+        stage('Push Docker Image') {
+            steps {
+                withCredentials([string(credentialsId: 'docker-hub-token', variable: 'DOCKER_TOKEN')]) {
                     sh """
-                      echo $DOCKER_TOKEN | docker login -u iamajjayya --password-stdin
-                      docker push ${env.DOCKER_IMAGE}:${params.BRANCH}
+                    echo $DOCKER_TOKEN | docker login -u iamajjayya --password-stdin
+                    docker push ${env.DOCKER_IMAGE}:${params.BRANCH}
                     """
-                 }
-            }
-        }
-
-        stage('Deploy to Staging') {
-            when {
-                expression { return params.DEPLOY_ENV == 'staging' }
-            }
-            steps {
-                echo "Deploying Docker container to staging environment"
-                sh "docker run -d -p 5000:5000 --name automation-staging ${env.DOCKER_IMAGE}:${params.BRANCH}"
-            }
-        }
-
-        stage('Manual Approval for Production') {
-            when {
-                expression { return params.DEPLOY_ENV == 'production' }
-            }
-            steps {
-                script {
-                    input message: "Deploy to production?", ok: "Deploy"
                 }
-            }
-        }
-
-        stage('Deploy to Production') {
-            when {
-                expression { return params.DEPLOY_ENV == 'production' }
-            }
-            steps {
-                echo "Deploying Docker container to production environment"
-                sh "docker run -d -p 5000:5000 --name automation-prod ${env.DOCKER_IMAGE}:${params.BRANCH}"
             }
         }
     }
 
     post {
         success {
-            mail to: "ajjayya2002@gmail.com",
-                 subject: "SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-                 body: "Good news! The pipeline completed successfully.\nBranch: ${params.BRANCH}"
+            echo "Pipeline succeeded!"
         }
         failure {
-            mail to: "ajjayya2002@gmail.com",
-                 subject: "FAILURE: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-                 body: "Pipeline failed. Please check Jenkins logs.\nBranch: ${params.BRANCH}"
+            echo "Pipeline failed!"
         }
     }
 }
