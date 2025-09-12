@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "iamajjayya/automation_framework"
-        BRANCH = "${params.BRANCH ?: 'main'}"
+        BRANCH = "${params.BRANCH ?: 'teastin_main'}"
     }
 
     parameters {
